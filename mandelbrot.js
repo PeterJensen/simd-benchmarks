@@ -75,7 +75,6 @@
     }
     for (var i = 0, n = simd.length; i < n; ++i) {
       if (simd[i] !== nonSimd[i]) {
-        print (i, simd[i], nonSimd[i]);
         return false;
       }
     }
