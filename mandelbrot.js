@@ -53,7 +53,7 @@
       var z_im24 = SIMD.mul (z_im4, z_im4);
 
       var mi4    = SIMD.lessThanOrEqual (SIMD.add (z_re24, z_im24), four4);
-      // of all 4 values are greater than 4.0, there's no reason to continue
+      // if all 4 values are greater than 4.0, there's no reason to continue
       if (mi4.signMask === 0x00) {
         break;
       }
