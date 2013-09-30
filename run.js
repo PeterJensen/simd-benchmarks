@@ -1,5 +1,10 @@
-//load ('float32x4array.js');
-load ('ecmascript_simd.js');
+if (typeof SIMD === "undefined") {
+  load('ecmascript_simd.js');
+}
+if (typeof Float32x4Array === "undefined") {
+  load('float32x4array.js');
+}
+
 load ('base.js');
 
 // load individual benchmarks
